@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Coyote - Licores, Apuestas y Diversión</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="img/coyotefavicon.png">
+    <style>
+        /* Estilos anteriores */
+        .hero-section {
+            background: linear-gradient(rgba(163, 97, 10, 0.644), rgba(163, 97, 10, 0.7)), url('promo-image.jpg') center/cover;
+            height: 70vh;
+        }
+        
+        .navbar {
+            background-color: #683f0a !important;
+        }
+
+        .navbar-nav .nav-link {
+            color: white !important;
+            margin: 0 15px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .navbar-nav .nav-link:hover {
+            background-color: #e74c3c !important;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Nuevos estilos para promociones */
+        .section-promociones {
+            padding: 5rem 0;
+            background: #f8f9fa;
+        }
+
+        .card-promo {
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .card-promo:hover {
+            transform: translateY(-10px);
+        }
+
+        .promo-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(104, 63, 10, 0.9));
+            padding: 2rem;
+            color: white;
+        }
+
+        .galeria-local img {
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        #contacto {
+            background: linear-gradient(rgba(163, 97, 10, 0.644), rgba(163, 97, 10, 0.7)), url('promo-image.jpg') center/cover;
+            height: 45vh;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar Actualizado -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/logo.jpeg" alt="Logo El Coyote" style="height: 40px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="catalogo.html">Productos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Sección Promociones -->
+<section id="promociones" class="section-promociones">
+    <div class="container">
+        <h2 class="text-center mb-5 display-4">Promociones Destacadas</h2>
+        
+        <div class="row g-4 mb-5">
+            <!-- Promoción 1 -->
+            <div class="col-md-6">
+                <div class="card-promo position-relative">
+                    <img src="img/promocion1.jpeg" class="img-fluid" alt="Promoción Especial">
+                    <div class="promo-overlay">
+                        <h3>Noche de Apuestas</h3>
+                        <p>¡Apuesta $30 y lleva 1 tobo de cervezas gratis!</p>
+                        <small>Válido hasta el 15/03/2025</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Promoción 2 -->
+            <div class="col-md-6">
+                <div class="card-promo position-relative">
+                    <img src="img/promocion2.jpeg" class="img-fluid" alt="Oferta de Cervezas">
+                    <div class="promo-overlay">
+                        <h3>Happy Hour</h3>
+                        <p>Todas las cervezas a mitad de precio de 4pm a 7pm</p>
+                        <small>De lunes a viernes</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Galería del Local -->
+        <h3 class="text-center mb-4 display-5">Nuestras Instalaciones</h3>
+        
+        <div class="row g-4">
+            <!-- Exterior -->
+            <div class="col-md-6 col-lg-3">
+                <div class="galeria-local">
+                    <img src="img/entrada-principal.jpeg" class="img-fluid" alt="Fachada principal">
+                    <div class="text-center mt-2">
+                        <h5>Entrada Principal</h5>
+                        <p>Amplio estacionamiento y área de acceso</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <div class="galeria-local">
+                    <img src="img/entrada2.jpeg" class="img-fluid" alt="Terraza exterior">
+                    <div class="text-center mt-2">
+                        <h5>Bienvenidos</h5>
+                        <p>Cruza nuestras puertas y descubre un mundo de emoción y confort.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interior -->
+            <div class="col-md-6 col-lg-3">
+                <div class="galeria-local">
+                    <img src="img/sala-de-apuestas2.jpeg" class="img-fluid" alt="Bar principal">
+                    <div class="text-center mt-2">
+                        <h5>Zona de Apuestas</h5>
+                        <p>Ambiente fresco y perfectamente acondicionado.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <div class="galeria-local">
+                    <img src="img/sala-de-apuestas.jpeg" class="img-fluid" alt="Área de apuestas">
+                    <div class="text-center mt-2">
+                        <h5>Sala de Apuestas</h5>
+                        <p>Pantallas HD y atención personalizada</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contacto -->
+<section id="contacto" class="py-5 bg-dark text-white">
+    <div class="container text-center">
+        <h2 class="mb-5">Contáctanos</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <a href="https://wa.me/1234567890" target="_blank" class="text-white">
+                    <i class="fab fa-whatsapp social-icon"></i>
+                    <p>+1 234 567 890</p>
+                </a>
+            </div>
+            <div class="col-md-4 mb-4">
+                <a href="mailto:contacto@elcoyote.com" class="text-white">
+                    <i class="fas fa-envelope social-icon"></i>
+                    <p>contacto@elcoyote.com</p>
+                </a>
+            </div>
+            <div class="col-md-4 mb-4">
+                <a href="https://instagram.com/elcoyote" target="_blank" class="text-white">
+                    <i class="fab fa-instagram social-icon"></i>
+                    <p>@elcoyote</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-black text-white text-center py-3">
+    <p>&copy; 2025 El Coyote - Todos los derechos reservados</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

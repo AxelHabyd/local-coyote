@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Coyote - Productos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="img/coyotefavicon.png">
+    <style>
+        .product-card {
+            transition: transform 0.3s;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        .product-img {
+            height: 200px;
+            object-fit: cover;
+        }
+        .navbar {
+            background-color: #683f0a !important;
+        }
+
+        /* Estilos para los enlaces */
+        .navbar-nav .nav-link {
+            color: white ;
+            margin: 0 15px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        /* Efecto hover personalizado */
+        .navbar-nav .nav-link:hover {
+            background-color: #e74c3c ;
+            color: white ;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Estilo para el enlace activo */
+        .navbar-nav .nav-link.active {
+            background-color: #ca4e41;
+            font-weight: bold;
+        }
+        #contacto {
+            background: linear-gradient(rgba(163, 97, 10, 0.644), rgba(163, 97, 10, 0.7)), url('promo-image.jpg') center/cover;
+            height: 45vh;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        
+        <img src="img/logo.jpeg" alt="Logo" style="height: 40px;">
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="promociones.html">Promociones</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Catálogo de Productos -->
+<section class="container py-5" id="productos">
+    <h1 class="text-center mb-5">Nuestros Productos</h1>
+    
+    <div class="row g-4">
+        <!-- Producto 1 -->
+        <div class="col-lg-3 col-md-4 col-6">
+            <div class="card h-100 product-card">
+                <img src="productos/029.jpg" class="card-img-top product-img" alt="029">
+                <div class="card-body text-center">
+                    <h5>029</h5>
+                    <p class="text-success">$2.92</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="col-lg-3 col-md-4 col-6">
+            <div class="card h-100 product-card">
+                <img src="productos/don-mencho.jpg" class="card-img-top product-img" alt="Don Mencho">
+                <div class="card-body text-center">
+                    <h5>Don Mencho</h5>
+                    <p class="text-success">$2.92</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="col-lg-3 col-md-4 col-6">
+            <div class="card h-100 product-card">
+                <img src="productos/5-estrella.jpg" class="card-img-top product-img" alt="5 Estrella">
+                <div class="card-body text-center">
+                    <h5>5 Estrella</h5>
+                    <p class="text-success">$5.00</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="col-lg-3 col-md-4 col-6">
+            <div class="card h-100 product-card">
+                <img src="productos/rumbaron.jpg" class="card-img-top product-img" alt="Rumbaron">
+                <div class="card-body text-center">
+                    <h5>Rumbaron</h5>
+                    <p class="text-success">$5.00</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto 5 -->
+        <div class="col-lg-3 col-md-4 col-6">
+            <div class="card h-100 product-card">
+                <img src="productos/sangria-toxica.jpg" class="card-img-top product-img" alt="Sangría Tóxica">
+                <div class="card-body text-center">
+                    <h5>Sangría la Tóxica</h5>
+                    <p class="text-success">$5.00</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto 6 -->
+        <div class="col-lg-3 col-md-4 col-6">
+            <div class="card h-100 product-card">
+                <img src="productos/kings-club.jpg" class="card-img-top product-img" alt="Kings Club">
+                <div class="card-body text-center">
+                    <h5>Kings Club</h5>
+                    <p class="text-success">$5.00</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto 7 -->
+        <div class="col-lg-3 col-md-4 col-6">
+            <div class="card h-100 product-card">
+                <img src="productos/carorena.jpg" class="card-img-top product-img" alt="Caroreña">
+                <div class="card-body text-center">
+                    <h5>Caroreña</h5>
+                    <p class="text-success">$7.00</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto 8 -->
+        <div class="col-lg-3 col-md-4 col-6">
+            <div class="card h-100 product-card">
+                <img src="productos/dragon.jpg" class="card-img-top product-img" alt="Dragon">
+                <div class="card-body text-center">
+                    <h5>Dragón</h5>
+                    <p class="text-success">$3.20</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto 9 -->
+        <div class="col-lg-3 col-md-4 col-6">
+            <div class="card h-100 product-card">
+                <img src="productos/caja-polar.jpg" class="card-img-top product-img" alt="Caja Polar">
+                <div class="card-body text-center">
+                    <h5>Caja Polar</h5>
+                    <p class="text-success">$19.00 (sin hielo)<br>$20.00 (con hielo)</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto 10 -->
+        <div class="col-lg-3 col-md-4 col-6">
+            <div class="card h-100 product-card">
+                <img src="productos/solera-light.jpg" class="card-img-top product-img" alt="Solera Light">
+                <div class="card-body text-center">
+                    <h5>Solera Light</h5>
+                    <p class="text-success">$22.00 (con hielo)</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto 11 -->
+        <div class="col-lg-3 col-md-4 col-6">
+            <div class="card h-100 product-card">
+                <img src="productos/sangria-manda.jpg" class="card-img-top product-img" alt="Sangría la que manda">
+                <div class="card-body text-center">
+            <h5>Sangría la que manda</h5>
+            <p class="text-success">$5.00</p>
+        </div>
+    </div>
+</div>
+
+        <!-- Producto 12 -->
+        <div class="col-lg-3 col-md-4 col-6">
+            <div class="card h-100 product-card">
+                <img src="productos/vino-espanola.jpg" class="card-img-top product-img" alt="Vino la española">
+                <div class="card-body text-center">
+            <h5>Vino la española</h5>
+            <p class="text-success">$11.00</p>
+        </div>
+    </div>
+</div>
+
+        <!-- Producto 13 -->
+        <div class="col-lg-3 col-md-4 col-6">
+            <div class="card h-100 product-card">
+                <img src="productos/santa-teresa-gran-reserva.jpg" class="card-img-top product-img" alt="Santa Teresa Gran Reserva">
+                <div class="card-body text-center">
+            <h5>Santa Teresa Gran Reserva</h5>
+            <p class="text-success">$11.00</p>
+        </div>
+    </div>
+</div>
+
+        <!-- Producto 14 -->
+        <div class="col-lg-3 col-md-4 col-6">
+            <div class="card h-100 product-card">
+                <img src="productos/santa-teresa-linaje.jpg" class="card-img-top product-img" alt="Santa Teresa Linaje">
+                <div class="card-body text-center">
+            <h5>Santa Teresa Linaje</h5>
+            <p class="text-success">$17.00</p>
+        </div>
+    </div>
+</div>
+
+        <!-- Producto 15 -->
+    <div class="col-lg-3 col-md-4 col-6">
+        <div class="card h-100 product-card">
+                <img src="productos/caja-malta.jpg" class="card-img-top product-img" alt="Caja de Malta">
+                <div class="card-body text-center">
+            <h5>Caja de Malta</h5>
+            <p class="text-success">$16.00</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Producto 16 -->
+    <div class="col-lg-3 col-md-4 col-6">
+        <div class="card h-100 product-card">
+                <img src="productos/ponche-crema.jpg" class="card-img-top product-img" alt="Ponche Crema">
+                <div class="card-body text-center">
+            <h5>Ponche Crema</h5>
+            <p class="text-success">$16.00</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Producto 17 -->
+    <div class="col-lg-3 col-md-4 col-6">
+        <div class="card h-100 product-card">
+            <img src="productos/caja-lata-350.jpg" class="card-img-top product-img" alt="Caja de Lata 350ml">
+            <div class="card-body text-center">
+                <h5>Caja de Lata 350ml</h5>
+                <p class="text-success">$22.00 (con hielo)</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Producto 18 -->
+    <div class="col-lg-3 col-md-4 col-6">
+        <div class="card h-100 product-card">
+            <img src="productos/caja-lata-250.jpg" class="card-img-top product-img" alt="Caja de Lata 250ml">
+            <div class="card-body text-center">
+                <h5>Caja de Lata 250ml</h5>
+                <p class="text-success">$20.00 (con hielo)</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Producto 19 -->
+    <div class="col-lg-3 col-md-4 col-6">
+        <div class="card h-100 product-card">
+            <img src="productos/caja-lata-solera.jpg" class="card-img-top product-img" alt="Caja de Lata Solera">
+            <div class="card-body text-center">
+                <h5>Caja de Lata Solera</h5>
+                <p class="text-success">$13.00</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Producto 20 -->
+    <div class="col-lg-3 col-md-4 col-6">
+        <div class="card h-100 product-card">
+            <img src="productos/lata-caroreña-verano.jpg" class="card-img-top product-img" alt="Lata Caroreña Verano">
+            <div class="card-body text-center">
+                <h5>Lata Caroreña Verano</h5>
+                <p class="text-success">$1.30/unidad</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Producto 21 -->
+    <div class="col-lg-3 col-md-4 col-6">
+        <div class="card h-100 product-card">
+            <img src="productos/tercio-nr-light-pilsen.jpg" class="card-img-top product-img" alt="Tercio NR Light y Pilsen">
+            <div class="card-body text-center">
+                <h5>Tercio NR Light y Pilsen</h5>
+                <p class="text-success">$1.20/unidad</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Producto 22 -->
+    <div class="col-lg-3 col-md-4 col-6">
+        <div class="card h-100 product-card">
+            <img src="productos/caja-solera-verde.jpg" class="card-img-top product-img" alt="Caja Solera Verde">
+            <div class="card-body text-center">
+                <h5>Caja Solera Verde</h5>
+                <p class="text-success">$25.00 (con hielo)</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Producto 23 -->
+    <div class="col-lg-3 col-md-4 col-6">
+        <div class="card h-100 product-card">
+            <img src="productos/10-cervezas.jpg" class="card-img-top product-img" alt="10 Cervezas">
+            <div class="card-body text-center">
+                <h5>10 Cervezas</h5>
+                <p class="text-success">$6.00</p>
+            </div>
+        </div>
+    </div>
+        </div>
+    </section>
+
+<!-- Contacto -->
+<section id="contacto" class="bg-dark text-white py-5">
+    <div class="container text-center">
+        <h2 class="mb-4">Contáctanos</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <a href="https://wa.me/1234567890" class="text-white">
+                    <i class="fab fa-whatsapp fa-3x"></i>
+                    <p>WhatsApp</p>
+                </a>
+            </div>
+            <div class="col-md-4 mb-4">
+                <a href="mailto:contacto@elcoyote.com" class="text-white">
+                    <i class="fas fa-envelope fa-3x"></i>
+                    <p>Email</p>
+                </a>
+            </div>
+            <div class="col-md-4 mb-4">
+                <a href="https://instagram.com/elcoyote" class="text-white">
+                    <i class="fab fa-instagram fa-3x"></i>
+                    <p>Instagram</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-black text-white text-center py-3">
+    <p>&copy; 2025 El Coyote - Todos los derechos reservados</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
