@@ -44,10 +44,23 @@
             background-color: #ca4e41;
             font-weight: bold;
         }
-        #contacto {
-            background: linear-gradient(rgba(163, 97, 10, 0.644), rgba(163, 97, 10, 0.7)), url('promo-image.jpg') center/cover;
-            height: 120vh;
+        
         }
+        .contact-card {
+        transition: all 0.3s ease;
+        background: rgba(255, 255, 255, 0.1);
+        border: 2px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .contact-card:hover {
+        transform: translateY(-5px);
+        background: rgba(255, 255, 255, 0.2);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .fa-3x {
+        font-size: 2.5em;
+    }
     </style>
 </head>
 <body>
