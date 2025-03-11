@@ -8,12 +8,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="icon" type="image/png" href="img/coyotefavicon.png">
     <style>
+        /* Estilos anteriores */
+        .hero-section {
+            background: linear-gradient(rgba(163, 97, 10, 0.644), rgba(163, 97, 10, 0.7)), url('promo-image.jpg') center/cover;
+            height: 70vh;
+        }
+        
         .navbar {
-            background-color: #683f0a;
+            background-color: #683f0a !important;
         }
 
         .navbar-nav .nav-link {
-            color: white ;
+            color: white !important;
             margin: 0 15px;
             padding: 10px 20px;
             border-radius: 5px;
@@ -21,7 +27,7 @@
         }
 
         .navbar-nav .nav-link:hover {
-            background-color: #e74c3c ;
+            background-color: #e74c3c !important;
             transform: translateY(-2px);
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
@@ -62,7 +68,7 @@
 
         #contacto {
             background: linear-gradient(rgba(163, 97, 10, 0.644), rgba(163, 97, 10, 0.7)), url('promo-image.jpg') center/cover;
-            height: 45vh;
+            height: 85vh;
         }
     </style>
 </head>
@@ -168,29 +174,32 @@
 </section>
 
 <!-- Contacto -->
-<section id="contacto" class="py-3 bg-dark text-white">
+<section id="contacto" class="bg-dark text-white py-5">
     <div class="container text-center">
-        <h2 class="mb-5">Contáctanos</h2>
+        <h2 class="mb-4">Contáctanos</h2>
         <div class="row">
-            <div class="col-md-3 mb-3">
-                <a href="https://wa.me/1234567890" target="_blank" class="text-white">
-                    <i class="fab fa-whatsapp social-icon"></i>
+            <div class="col-md-4 mb-4">
+                <a href="https://wa.me/1234567890" class="text-white">
+                    <i class="fab fa-whatsapp fa-3x"></i>
+                    <p>WhatsApp</p>
                 </a>
             </div>
-            <div class="col-md-3 mb-3">
+            <div class="col-md-4 mb-4">
                 <a href="mailto:contacto@elcoyote.com" class="text-white">
-                    <i class="fas fa-envelope social-icon"></i>
+                    <i class="fas fa-envelope fa-3x"></i>
+                    <p>Email</p>
                 </a>
             </div>
-            <div class="col-md-3 mb-3">
-                <a href="https://instagram.com/depositoelcoyote" target="_blank" class="text-white">
-                    <i class="fab fa-instagram social-icon"></i>
+            <div class="col-md-4 mb-4">
+                <a href="https://instagram.com/elcoyote" class="text-white">
+                    <i class="fab fa-instagram fa-3x"></i>
+                    <p>Instagram</p>
                 </a>
             </div>
         </div>
     </div>
 </section>
-    
+
 <footer class="bg-black text-white text-center py-3">
     <p>&copy; 2025 El Coyote - Todos los derechos reservados</p>
 </footer>
