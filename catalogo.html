@@ -48,6 +48,84 @@
             background: linear-gradient(rgba(163, 97, 10, 0.644), rgba(163, 97, 10, 0.7)), url('promo-image.jpg') center/cover;
             height: 45vh;
         }
+        .hero-section {
+            background: linear-gradient(rgba(163, 97, 10, 0.644), rgba(163, 97, 10, 0.7)), url('promo-image.jpg') center/cover;
+            height: 70vh;
+        }
+        .product-card img {
+            height: 250px;
+            object-fit: cover;
+        }
+        .social-icon {
+            font-size: 2rem;
+            margin: 0 10px;
+        }
+        .map-container {
+            height: 400px;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        .navbar {
+            background-color: #683f0a !important;
+        }
+
+        /* Estilos para los enlaces */
+        .navbar-nav .nav-link {
+            color: white ;
+            margin: 0 15px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        /* Efecto hover personalizado */
+        .navbar-nav .nav-link:hover {
+            background-color: #e74c3c ;
+            color: white ;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Estilo para el enlace activo */
+        .navbar-nav .nav-link.active {
+            background-color: #e74c3c;
+            font-weight: bold;
+        }
+
+        .hero-section {
+            position: relative;
+            height: 70vh;
+            overflow: hidden;
+        }
+
+        .hero-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            z-index: 0;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            padding: 2rem;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            z-index: 0;
+        
+        }
+        #contacto {
+            background: linear-gradient(rgba(163, 97, 10, 0.644), rgba(163, 97, 10, 0.7)), url('promo-image.jpg') center/cover;
+            height: 45vh;
+        }
     </style>
 </head>
 <body>
